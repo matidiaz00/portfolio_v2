@@ -1,0 +1,587 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@color-base: #6ac882;
+
+* {
+    font-family: 'Open Sans';
+}
+
+body {
+    padding-top: 51px;
+    word-wrap: break-word;
+}
+
+article {
+    padding: 80px 0;
+}
+
+h1, h2, h3, h4, h5, #row-home #text-logo {
+    color: @color-base;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.jumbotron h1,
+h1 {
+    font-size: 50px;
+    padding: 0;
+}
+
+h2 {
+    padding: 0 0 30px;
+}
+
+h3 {
+    padding: 0 0 20px;
+}
+
+h4 {
+    padding: 0 0 10px;
+}
+
+p {
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+}
+
+a:hover, a:focus,  a:active {
+    color: @color-base;
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a.thumbnail:hover {
+    border-color: @color-base;
+}
+.bg-primary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger,
+.bg-warning {
+    padding: 20px;
+    font-size: 13px;
+    color: #868686;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.img-file img {
+    background-color: @color-base;
+}
+
+.navbar-brand img {
+    background-color: @color-base;
+}
+
+.navbar-default {
+    border-bottom: 1px solid @color-base;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    border-bottom: 3px solid #fff;
+    -webkit-transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    -o-transition: color 0.1s;
+    transition: color 0.1s;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,  .navbar-default .navbar-nav>li>a:active {
+    color: @color-base;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: @color-base;
+    background-color: transparent;
+    border-color: @color-base;
+}
+
+.navbar-right {
+    margin-right:0;
+}
+
+.jumbotron {
+    background-color: @color-base;
+    margin: 0;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: #fff;
+}
+
+.jumbotron h1 {
+    float: left;
+}
+
+.jumbotron a {
+    float: right;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+#jumbo_home {
+    padding: 0;
+    text-align: center;
+}
+
+#jumbo_home h1 {
+    float: none;
+}
+
+#jumbo_home img {
+    width: auto;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: inline-block;
+}
+
+.carousel-caption {
+    position: relative;
+    right: auto;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    text-shadow: none;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.carousel-caption p {
+    font-size: 19px;
+    margin-top: 13px;
+}
+
+footer {
+    background-color: @color-base;
+    padding: 50px 0;
+}
+
+footer p, footer h3, footer a, footer a:hover, footer a:focus,  footer a:active {
+    color: #fff;
+}
+
+.social_icons {
+    font-size: 12px;
+}
+
+.social_icons a {
+    text-decoration: none;
+}
+
+span.social-icon {
+	border: solid 1px;
+	color: @color-base;
+	padding: 10px;
+	border-radius: 50px;
+	margin-right: 6px;
+	width: 34px;
+    height: 34px;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../img/social-icons.png);
+}
+
+.social-white a {
+    margin-bottom: 15px;
+}
+
+.social-base a {
+    margin: 4px;
+    display: inline-block;
+}
+
+.social-white a span.social-icon {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.social-base a span.social-icon {
+    background-color: @color-base;
+    border-color: @color-base;
+}
+
+#contacto-social .input-group-addon {
+    background-color: @color-base;
+}
+
+#contacto-social input, #contacto-social .input-group-addon {
+    border-color: @color-base;
+}
+
+#facebook 	      {background-position: center 1px;}
+#instagram 	      {background-position: center -29px;}
+#twitter 	      {background-position: center -59px;}
+#youtube 	      {background-position: center -89px;}
+#behance 	      {background-position: center -119px;}
+#soundcloud 	  {background-position: center -149px;}
+#tumblr 	      {background-position: center -179px;}
+#linkedin 	      {background-position: center -209px;}
+#vine 	          {background-position: center -239px;}
+#drawclroud 	  {background-position: center -269px;}
+#lookbook 	      {background-position: center -299px;}
+#flickr 	      {background-position: center -329px;}
+
+.btn-default,
+.btn-danger {
+    text-decoration: none;
+	color: #fff;
+	background-image: none;
+	text-shadow:none;
+	margin: 10px 0;
+    vertical-align: top;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn-default {
+	border-color: @color-base;
+	background-color: @color-base;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active,
+.jumbotron .btn-default:hover, .jumbotron .btn-default:focus, .jumbotron .btn-default:active {
+	border-color: @color-base;
+	color: @color-base;
+	background-color: #fff;
+}
+
+footer .btn-default, .jumbotron .btn-default {
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.carousel-right {
+    float: right;
+    width: 500px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.row-border {
+    padding: 30px 20px;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+}
+
+.icon {
+    font-size: 60px;
+    color: @color-base;
+    margin: 10px auto 35px;
+}
+
+.media-left, .media>.pull-left {
+    padding-right: 30px; 
+}
+
+.row-border {
+    padding: 30px;
+}
+
+.label {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.label-info {
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    padding: 0 20px 10px 0;
+    max-width: 100%;
+}
+
+.label-info .glyphicon {
+    color: @color-base;
+    margin-right: 5px;
+}
+
+.label-primary {
+    background-color: @color-base;
+    padding: 7px 10px;
+    margin: 0 0 4px 0;
+    font-size: 12px;
+}
+
+.thumbnail a>img, .thumbnail>img {
+    width: 100%;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+}
+
+@media (max-width: 1200px) {
+    footer .col-md-6 {
+        margin-bottom: 30px;
+    }
+    
+    footer .col-md-6 .col-md-6 {
+        margin-bottom: 15px;
+    }
+    
+    .container{
+        width: 100%;
+    }
+    
+    .jumbotron {
+        text-align: center;
+    }
+    
+    .carousel-caption {
+        padding-top: 100px;
+    }
+    
+    .jumbotron h1 {
+        text-align: center;
+        float: none;
+        font-size: 40px;
+    }
+    
+    .carousel-caption p {
+        font-size: 16px;
+    }
+    
+    .jumbotron .btn-default {
+        float: none;
+        margin: 20px auto 0;
+        display: inline-block;
+    }
+    
+    .col-md-3,
+    .col-md-4,
+    .col-md-12 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #jumbo_home {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+        border: none;
+    }
+    
+    .carousel-right {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
